@@ -65,11 +65,13 @@ class ShoppingApp:
 
 
     def on_entry_click(self, event, default_text):
+        ''''removes the default text from the field'''
         if event.widget.get() == default_text:
             event.widget.delete(0, tk.END)
             event.widget.config(fg='black')
 
     def on_focusout(self, event, default_text):
+        '''changes back to default text'''
         if event.widget.get() == '':
             event.widget.insert(0, default_text)
             event.widget.config(fg='grey')
@@ -80,13 +82,17 @@ class ShoppingApp:
             widget.destroy()
 
     def create_cart(self):
+        ''''Called initially, collects name and date from the user.
+        Clears the main frame and displays the items'''
+        
+        # creates a shopping cart with the provided name and date, or "Anonymouse" and today's date if blank
         customer_name = self.name_entry.get() if self.name_entry.get() != self.name_default_text else 'Anonymous'
         date = self.date_entry.get() if self.date_entry.get() != self.date_default_text else datetime.now().strftime('%B %d, %Y')
         self.shopping_cart = ShoppingCart(customer_name, date)
-        # print(f"Created new shopping cart for {customer_name} on {date}")
         self.display_items()
 
     def display_items(self):
+        '''clears the frame and displays the available items, options to update quantities, and menu buttons'''
         self.clear_frame()
         self.quantity_entries = []  # List to hold references to quantity entry widgets
 
@@ -120,6 +126,8 @@ class ShoppingApp:
         view_descriptions_button.grid(row=len(self.items_available) + 3, column=2, columnspan=1, pady=10, sticky='ew')
 
     def update_cart(self):
+        '''ingests item quantities and either adds the new items to the cart or updates the quantities
+        calls display_items() to reset the UI'''
         for item, entry in self.quantity_entries:
             try:
                 # will throw a ValueError if blank
@@ -138,6 +146,9 @@ class ShoppingApp:
         self.display_items()
 
     def view_cart(self):
+        '''Calls pre-defined cart.get_totals() to quickly show items in the cart
+        after clearing the frame
+        provides button to get back to the item entry page'''
         # Clear the current UI components in the main frame
         self.clear_frame()
 
@@ -153,6 +164,9 @@ class ShoppingApp:
         back_button.pack(pady=10)
 
     def view_descriptions(self):
+        '''Calls pre-defined cart.get_descriptions() to quickly show items in the cart
+        after clearing the frame
+        provides button to get back to the item entry page'''
         # Clear the current UI components in the main frame
         self.clear_frame()
 
