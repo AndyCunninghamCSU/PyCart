@@ -19,18 +19,19 @@
 
 ## Skills Demonstrated  
 
-✅ **Python Programming** – Mastery of Python fundamentals, including classes, methods, and error handling.  
-✅ **Object-Oriented Design** – Encapsulation of shopping cart logic within modular, reusable classes.  
-✅ **GUI Development** – Hands-on experience building a responsive UI using **Tkinter**, a native Python GUI toolkit.  
-✅ **Software Engineering Best Practices** – Thoughtful structuring of code, clear documentation, and maintainability.  
-✅ **AI-Assisted Development** – Utilizing AI as a **mentor, advisor, and reviewer**, ensuring that every line of code is fully understood before implementation.  
+**Python Programming** – Mastery of Python fundamentals, including classes, methods, and error handling.  
+**Object-Oriented Design** – Encapsulation of shopping cart logic within modular, reusable classes.  
+**GUI Development** – Hands-on experience building a responsive UI using **Tkinter**, a native Python GUI toolkit.  
+**Software Engineering Best Practices** – Thoughtful structuring of code, clear documentation, and maintainability.  
+**AI-Assisted Development** – Utilizing AI as a **mentor, advisor, and reviewer**, ensuring that every line of code is fully understood before implementation.  
 
 ---
 
 ## AI Disclosure & Development Philosophy  
 I believe that **AI, including ChatGPT, is a force multiplier** for informed development. In the context of learning, I adhere to the following principles:  
 
-- All **core shopping cart logic** is **hand-written by me** without direct AI-generated insertion.  
+- All **core shopping cart logic** is **hand-written by me**. AI was utilized as a mentor and advisor to understand
+best practices and problem solving methods, but never influenced final coding decisions.
 - The **GUI development** leveraged **heavier AI assistance**, focusing on **efficiency** while still ensuring **full comprehension** of the best practices applied.  
 - **Main_GUI.py was built in a single evening**, showcasing rapid prototyping and problem-solving abilities.  
 
