@@ -4,6 +4,18 @@
 **PyCart** is a Python-based shopping cart application that showcases my ability to design, develop, and implement software solutions using object-oriented programming principles. This project includes both a **terminal-based** and a **GUI-based** interface, demonstrating my versatility in Python development.
 
 ---
+## Usage
+### To view GUI, which was added as a seperate exercise after course conclusion:
+- Ensure tkinter is installed
+```bash
+py Main_GUI.py
+```
+
+### To view terminal interface to satisfy course requirements:
+```bash
+py Main_Terminal.py
+```
+---
 
 ## Core Components  
 
@@ -30,9 +42,8 @@
 ## AI Disclosure & Development Philosophy  
 I believe that **AI, including ChatGPT, is a force multiplier** for informed development. In the context of learning, I adhere to the following principles:  
 
-- All **core shopping cart logic** is **hand-written by me**. AI was utilized as a mentor and advisor to understand
-best practices and problem solving methods, but never influenced final coding decisions.
-- The **GUI development** leveraged **heavier AI assistance**, focusing on **efficiency** while still ensuring **full comprehension** of the best practices applied.  
+- All **core shopping cart logic** is **hand-written by me**. AI only served as a tutor for programming concepts and best
+practices.
+- The **GUI development** leveraged **heavy AI assistance**, focusing on **efficiency** while still ensuring **full comprehension** of the best practices applied.  
 - **Main_GUI.py was built in a single evening**, showcasing rapid prototyping and problem-solving abilities.  
-
-This README was initially drafted by me and **beautified using ChatGPT** for clarity and presentation.  
+- This README was initially drafted by me and **beautified using ChatGPT** for clarity and presentation.  
